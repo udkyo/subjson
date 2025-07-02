@@ -1,0 +1,13 @@
+name: Restricted branch check
+
+on:
+  pull_request:
+    types: [opened, reopened, synchronize]
+
+jobs:
+  restricted_branch_check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check if target branch is restricted
+        uses: udkyo/gha-restriction-checker/.github/actions/restricted-branch-check@main
+
