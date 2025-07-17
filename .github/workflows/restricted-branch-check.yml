@@ -9,5 +9,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Check if target branch is restricted
-        uses: udkyo/gha-restriction-checker/.github/actions/restricted-branch-check@main
+        uses: udkyo/build-tools/.github/workflows/restricted-branch-check@gha-restriction-checker
 
